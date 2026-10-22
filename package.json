@@ -1,0 +1,24 @@
+{
+  "name": "taskflow-mern-project",
+  "version": "1.0.0",
+  "description": "TaskFlow - MERN Stack Task Management System (ICTAK Submission)",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "npm run install:server && npm run install:client",
+    "start:server": "cd server && npm run dev",
+    "start:client": "cd client && npm run dev",
+    "test": "cd server && npm test",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "mern",
+    "ictak",
+    "react",
+    "node",
+    "mongodb",
+    "express"
+  ],
+  "author": "ICTAK Student",
+  "license": "MIT"
+}
