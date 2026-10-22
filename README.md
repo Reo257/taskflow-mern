@@ -11,14 +11,12 @@
 ---
 
 ## 📋 Student & Submission Details
-> **Note to Student**: Update the placeholder fields below with your actual details before submitting your project to ICTAK.
-
-- **Student Name:** [Your Full Name Here]
-- **ICTAK Batch / Roll Number:** [Your Batch ID / Roll Number Here]
+- **Student Name:** Reo Varghese
+- **ICTAK Batch / Roll Number:** [Enter Your Batch / Roll Number Here]
 - **Mentor / Evaluator:** ICTAK Full Stack Faculty
-- **GitHub Repository:** `https://github.com/[your-username]/taskflow-mern`
-- **Frontend Live Deployment (Vercel / Netlify):** `https://taskflow-client.vercel.app`
-- **Backend API Live Deployment (Render / Railway):** `https://taskflow-api.onrender.com`
+- **GitHub Repository:** https://github.com/Reo257/taskflow-mern
+- **Frontend Live Deployment (Vercel):** https://taskflow-reo.vercel.app
+- **Backend API Live Deployment (Render):** https://taskflow-api-reo.onrender.com
 - **Database:** MongoDB Atlas (AWS M0 Free Tier Cluster)
 
 ---
@@ -263,7 +261,7 @@ In accordance with ICTAK guidelines, every data-driven screen in TaskFlow reliab
 ### 5.2 Step-by-Step Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/[your-username]/taskflow-mern.git
+   git clone https://github.com/Reo257/taskflow-mern.git
    cd taskflow-mern
    ```
 
@@ -377,16 +375,16 @@ Test Results: 19 passed, 0 failed
    - `PORT` = `10000` (Render default)
    - `MONGODB_URI` = `<your-mongodb-atlas-uri>`
    - `JWT_SECRET` = `<a-secure-random-32-char-string>`
-   - `CLIENT_URL` = `<your-frontend-vercel-url>`
-6. Deploy the web service and copy the live URL (e.g., `https://taskflow-api.onrender.com`).
+   - `CLIENT_URL` = `https://taskflow-reo.vercel.app`
+6. Deploy the web service and copy the live URL: `https://taskflow-api-reo.onrender.com`.
 
 ### 7.3 Frontend: Vercel / Netlify
 1. Sign in to [Vercel](https://vercel.com) and click **Add New > Project**.
 2. Select your repository and set the **Root Directory** to `client`.
-3. Under **Environment Variables**, configure:
-   - `VITE_API_URL` = `https://taskflow-api.onrender.com/api`
-4. Click **Deploy**. Vercel will build and host the static SPA files with automated SSL.
-5. If using SPA routing on Netlify or Vercel, ensure rewrite rules route all paths to `index.html`.
+3. Under **Project Name**, enter `taskflow-reo`.
+4. Under **Environment Variables**, configure:
+   - `VITE_API_URL` = `https://taskflow-api-reo.onrender.com/api`
+5. Click **Deploy**. Vercel will build and host the static SPA files with automated SSL at `https://taskflow-reo.vercel.app`.
 
 ---
 
