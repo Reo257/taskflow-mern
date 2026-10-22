@@ -418,12 +418,19 @@ Before final submission, the following 10 self-review questions from the ICTAK S
 
 ## 9. Final Submission Checklist (Section 13)
 
-- [x] GitHub repository created and accessible to ICTAK evaluators.
-- [x] Project architecture strictly follows Section 4 separation of concerns (`client/` and `server/`).
-- [x] All 4 states (Loading, Success, Empty, Error) implemented on the frontend.
-- [x] Passwords hashed with `bcryptjs` (salt rounds = 10); plaintext passwords never stored or logged.
-- [x] JWT authentication and role-based authorization implemented with 7-day expiration.
-- [x] Strict user data isolation and ownership verification implemented and verified via automated tests.
-- [x] `.env` files excluded from Git via `.gitignore`; `.env.example` provided for both server and client.
-- [x] Automated test runner (`server/tests/api.test.js`) executed with 19/19 passing assertions.
-- [x] README includes full Problem Statement, API Contract, Data Model, Architecture Diagram, Deployment Guide, and Self-Review answers.
+- [x] **GitHub repository URL is shared and accessible to reviewers:** https://github.com/Reo257/taskflow-mern
+- [x] **Hosted application URL works and opens the correct version:** https://taskflow-mern-tau.vercel.app (Backend: https://taskflow-mern-nfex.onrender.com)
+- [x] **README explains the project, features, tech stack, setup steps, environment variable names, and live links.**
+- [x] **Screenshots of key screens (and mobile view) are included:** Included in repository under `/screenshots`.
+- [x] **Core flows tested on the live site, including sign-up, login and the main feature(s):** Verified live with registered student account.
+- [x] **.env files are not in the repository, and .env.example files are:** Verified `.env` is ignored by `.gitignore`.
+- [x] **No secrets, test passwords or personal data appear in the code, commit history or screenshots.**
+- [x] **Commit history shows steady progress with meaningful messages:** Recorded with clear conventional commit messages.
+- [x] **Known limitations and future improvements are listed honestly in the README:** Stated in Section 1.3 and Section 8.
+
+---
+
+### 10. Key Screen Previews
+| Live Task Dashboard | Production Deployment Status |
+| :---: | :---: |
+| ![TaskFlow Live Dashboard](./screenshots/dashboard.png) | ![Vercel Live Deployment](./screenshots/deployment.png) |
