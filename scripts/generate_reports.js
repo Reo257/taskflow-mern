@@ -12,6 +12,7 @@ import {
   WidthType,
   BorderStyle,
   AlignmentType,
+  ImageRun,
 } from 'docx';
 
 // Helper to create styled paragraphs
@@ -324,6 +325,35 @@ async function generateFinalReport() {
           createP(
             'The project successfully achieved 100% of its initial objectives and compliance targets. Performance profiling confirmed sub-100ms API response times. The automated test suite completed with 19 passed assertions and 0 failures. Live production testing verified seamless user registration, persistent login sessions, real-time workload metrics, and mobile responsiveness across multiple screen widths.'
           ),
+
+          createH1('SCREENSHOTS OF MAJOR CLIENT-SIDE VIEWS'),
+          createH2('Figure 1: Live TaskFlow Dashboard (Production Vercel & Render)'),
+          new Paragraph({
+            children: [
+              new ImageRun({
+                data: fs.readFileSync(path.join(process.cwd(), 'screenshots', 'dashboard.png')),
+                transformation: {
+                  width: 580,
+                  height: 290,
+                },
+              }),
+            ],
+            spacing: { after: 200 },
+          }),
+
+          createH2('Figure 2: Production Deployment Status & Login Interface (Vercel)'),
+          new Paragraph({
+            children: [
+              new ImageRun({
+                data: fs.readFileSync(path.join(process.cwd(), 'screenshots', 'deployment.png')),
+                transformation: {
+                  width: 580,
+                  height: 290,
+                },
+              }),
+            ],
+            spacing: { after: 200 },
+          }),
 
           createH1('CONCLUSION'),
           createP(
