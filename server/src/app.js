@@ -50,6 +50,20 @@ const authLimiter = rateLimit({
 });
 app.use('/api/auth', authLimiter);
 
+// Root Welcome Route & Render Uptime Pinger
+app.get(['/', '/api'], (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to TaskFlow MERN REST API - ICTAK Student Project',
+    endpoints: {
+      health: '/api/health',
+      auth: '/api/auth',
+      tasks: '/api/tasks',
+    },
+    documentation: 'See README.md for full API contract',
+  });
+});
+
 // API Health Check
 app.get('/api/health', (req, res) => {
   res.status(200).json({
