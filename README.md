@@ -12,7 +12,9 @@
 
 ## 📋 Student & Submission Details
 - **Student Name:** Reo Varghese
-- **ICTAK Batch / Roll Number:** [Enter Your Batch / Roll Number Here]
+- **Batch:** CS D
+- **Roll Number:** 21
+- **Student Registration (SR) Number:** 225783
 - **Mentor / Evaluator:** ICTAK Full Stack Faculty
 - **GitHub Repository:** https://github.com/Reo257/taskflow-mern
 - **Frontend Live Deployment (Vercel):** https://taskflow-mern-tau.vercel.app
