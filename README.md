@@ -15,7 +15,7 @@
 - **ICTAK Batch / Roll Number:** [Enter Your Batch / Roll Number Here]
 - **Mentor / Evaluator:** ICTAK Full Stack Faculty
 - **GitHub Repository:** https://github.com/Reo257/taskflow-mern
-- **Frontend Live Deployment (Vercel):** https://taskflow-reo.vercel.app
+- **Frontend Live Deployment (Vercel):** https://taskflow-mern-tau.vercel.app
 - **Backend API Live Deployment (Render):** https://taskflow-mern-nfex.onrender.com
 - **Database:** MongoDB Atlas (AWS M0 Free Tier Cluster)
 
@@ -375,16 +375,15 @@ Test Results: 19 passed, 0 failed
    - `PORT` = `10000` (Render default)
    - `MONGODB_URI` = `<your-mongodb-atlas-uri>`
    - `JWT_SECRET` = `<a-secure-random-32-char-string>`
-   - `CLIENT_URL` = `https://taskflow-reo.vercel.app`
+   - `CLIENT_URL` = `https://taskflow-mern-tau.vercel.app`
 6. Deploy the web service and copy the live URL: `https://taskflow-mern-nfex.onrender.com`.
 
 ### 7.3 Frontend: Vercel / Netlify
 1. Sign in to [Vercel](https://vercel.com) and click **Add New > Project**.
 2. Select your repository and set the **Root Directory** to `client`.
-3. Under **Project Name**, enter `taskflow-reo`.
-4. Under **Environment Variables**, configure:
+3. Under **Environment Variables**, configure:
    - `VITE_API_URL` = `https://taskflow-mern-nfex.onrender.com/api`
-5. Click **Deploy**. Vercel will build and host the static SPA files with automated SSL at `https://taskflow-reo.vercel.app`.
+4. Click **Deploy**. Vercel will build and host the static SPA files with automated SSL at `https://taskflow-mern-tau.vercel.app`.
 
 ---
 
